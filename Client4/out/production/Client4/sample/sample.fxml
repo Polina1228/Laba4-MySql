@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="tableStudent" layoutY="32.0" prefHeight="382.0" prefWidth="712.0">
+        <columns>
+          <TableColumn fx:id="tId" prefWidth="43.20001220703125" text="Id" />
+          <TableColumn fx:id="tSurname" prefWidth="158.4000244140625" text="Surname" />
+            <TableColumn fx:id="tName" prefWidth="176.0" text="Name" />
+            <TableColumn fx:id="tMiddleName" prefWidth="162.4000244140625" text="MiddleName" />
+            <TableColumn fx:id="tAge" prefWidth="76.79998779296875" text="Age" />
+            <TableColumn fx:id="tAverageGrade" prefWidth="98.4000244140625" text="AverageGrade" />
+        </columns>
+      </TableView>
+      <Button fx:id="Delete" layoutX="266.0" layoutY="421.0" mnemonicParsing="false" onAction="#DeleteStudent" prefHeight="42.0" prefWidth="106.0" text="Delete" />
+      <Button fx:id="Add" layoutX="14.0" layoutY="420.0" mnemonicParsing="false" onAction="#AddStudent" prefHeight="42.0" prefWidth="106.0" text="Add" />
+      <Button fx:id="Update" layoutX="141.0" layoutY="421.0" mnemonicParsing="false" onAction="#UpdateStudent" prefHeight="42.0" prefWidth="106.0" text="Update" />
+      <Button fx:id="Close" layoutX="592.0" layoutY="421.0" mnemonicParsing="false" onAction="#CloseWindow" prefHeight="41.0" prefWidth="105.0" text="Close" />
+      <Text layoutX="256.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students data base" textAlignment="CENTER" wrappingWidth="232.96875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="UpdateWindow" layoutX="436.0" layoutY="421.0" mnemonicParsing="false" onAction="#UpdateWindow" prefHeight="41.0" prefWidth="105.0" text="Upd current window" />
+   </children>
+</AnchorPane>
